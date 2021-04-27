@@ -1,0 +1,39 @@
+
+POST https://localhost:5001/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "UserName": "Daniel", 
+    "Password": "password", 
+    "Email": "daniel@hotmail.com",
+    "CreatedAt": "2021-10-03"
+
+}
+
+GET  https://localhost:5001/api/TodoItems/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJEYW5pZWwiLCJlbWFpbCI6ImRhbmllbEBob3RtYWlsLmNvbSIsIkNyZWF0ZWRBdCI6IjIwMjEtMTAtMDMiLCJqdGkiOiJhNzY1OWM5NS1kM2I1LTQxN2UtOGYxZi01NmU3N2M2ZmYyM2UiLCJleHAiOjE2MTkwMzg4MzUsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0L2ExZDUwNTIxLTk2ODctNGU0ZC1hNzZkLWRkZDUzYWIwYzY2OC8iLCJhdWQiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9hMWQ1MDUyMS05Njg3LTRlNGQtYTc2ZC1kZGQ1M2FiMGM2NjgvIn0.cqn7rrLoDprOrYj3hTc_0a4CeZClXs9kcpc8Uj3dkmQ
+
+# GET  https://localhost:5001/api/TodoItems/4
+# Content-Type: application/json
+
+# POST https://localhost:5001/api/TodoItems
+# Content-Type: application/json
+
+# {
+
+#     "Name": "Item 1", 
+#     "IsComplete": true 
+# }
+
+# PUT  https://localhost:5001/api/TodoItems/1
+# Content-Type: application/json
+
+# {
+#     "Id": 1,
+#     "Name": "Item 1 changed againt", 
+#     "IsComplete": true 
+# }
+
+# DELETE  https://localhost:5001/api/TodoItems/3
+# Content-Type: application/json
